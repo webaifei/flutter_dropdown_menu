@@ -211,6 +211,8 @@ class _MyHomePageState extends State<MyHomePage> {
   DropdownHeader buildDropdownHeader({DropdownMenuHeadTapCallback onTap}) {
     return new DropdownHeader(
       onTap: onTap,
+      defaultHeaderColor: Colors.black,
+      selectedHeaderColor: Colors.amber,
       titles: [TYPES[TYPE_INDEX], ORDERS[ORDER_INDEX], FOODS[0]['children'][0]],
     );
   }
